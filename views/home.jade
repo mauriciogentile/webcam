@@ -1,0 +1,23 @@
+doctype 5
+html
+	head
+		title Video Sample
+		link(rel="stylesheet", href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css")
+		link(rel="stylesheet", href="css/camera.css")
+	body
+		section#main
+			div#container(style:"top:50px")
+				canvas#canvas(class="canvas snapshot",width=300,height=300)
+				div#videoContainer(class="video")
+					video#vid(autoplay="",style="display:block;")
+				br
+				button#shotBtn(class="video") Take Picture
+				button#showVideoBtn(class="snapshot") Show Video
+				div#frame(class="ui-widget-content video")
+				div#left(class="opaque video")
+				div#top(class="opaque video")
+				div#bottom(class="opaque video")
+				div#right(class="opaque video")
+				script(type="text/javascript", src="http://code.jquery.com/jquery-1.8.3.min.js")
+				script(type="text/javascript", src="http://code.jquery.com/ui/1.9.2/jquery-ui.min.js")
+				script(type="text/javascript", src="/js/video.js")
